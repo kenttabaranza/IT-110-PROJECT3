@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dictionary Application</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>Dictionary</h1>
+
+            <a href="index.html">
+                Group Portfolio
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Introduction -->
+        <section class="dictionary-intro">
+
+            <h2>Dictionary Application</h2>
+            <p> Enter a word below to find its definition, pronunciation, and other information. </p>
+
+        </section>
+
+        <!-- Search Form -->
+        <section class="search-section">
+
+            <h2>Search for a Word</h2>
+
+            <form id="dictionaryForm">
+
+                <label for="wordInput"> Enter a word:</label>
+
+                <input
+                    type="text"
+                    id="wordInput"
+                    name="word"
+                    placeholder="Enter a word"
+                    required
+                    autocomplete="off"
+                >
+
+                <button type="submit"> Search</button>
+            </form>
+
+        </section>
+
+        <!-- Error Message -->
+        <section
+            id="errorMessage"
+            class="error-message"
+            aria-live="polite"
+            hidden
+        >
+            <h2>Error</h2>
+            <p> Could not fetch data. Please try again.</p>
+
+        </section>
+
+        <!-- Dictionary Result -->
+        <section
+            id="dictionaryResult"
+            class="dictionary-result"
+            aria-live="polite"
+        >
+            <h2>Definition Result</h2>
+
+            <!-- Word -->
+            <article class="word-information">
+
+                <h3 id="word"> Word</h3>
+                <p id="phonetic"> Pronunciation will appear here. </p>
+
+            </article>
+
+            <!-- Meaning -->
+            <article class="meaning">
+
+                <h3>Meaning</h3>
+                <p id="partOfSpeech"> Part of speech will appear here.</p>
+                <p id="definition"> Definition will appear here.</p>
+
+            </article>
+
+            <!-- Example -->
+            <article class="example">
+
+                <h3>Example</h3>
+                <p id="example"> Example sentence will appear here.</p>
+
+            </article>
+
+            <!-- Source -->
+            <article class="source">
+
+                <h3>Source</h3>
+                <p id="source"> Source information will appear here.</p>
+
+            </article>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Dictionary Application</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
